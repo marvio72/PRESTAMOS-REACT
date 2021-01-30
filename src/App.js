@@ -6,12 +6,13 @@ function App() {
   // Definir el state
 
   const [cantidad, guardarCantidad] = useState(0);
+  const [plazo, guardarPlazo] = useState(0);
 
   return (
     <Fragment>
       <Header titulo="Cotizador de Prestamos" descripcion="Ingresa al cotizador y obten tu crédito" />
       <div className="container">
-        <Formulario cantidad={cantidad} guardarCantidad={guardarCantidad} />
+        <Formulario cantidad={cantidad} guardarCantidad={guardarCantidad} plazo={plazo} guardarPlazo={guardarPlazo} />
       </div>
     </Fragment>
   );
