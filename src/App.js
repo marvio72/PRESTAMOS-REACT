@@ -3,11 +3,9 @@ import Header from './componentes/Headers';
 
 function App() {
   return (
-    // 
     <Fragment>
-      <Header />
+      <Header titulo="Cotizador de Prestamos" descripcion="Ingresa al cotizador y obten tu crédito" />
     </Fragment>
-    // </div>
   );
 }
 
