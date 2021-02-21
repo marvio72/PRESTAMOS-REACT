@@ -1,4 +1,5 @@
 import React, { useState, Fragment } from 'react';
+import { calcularTotal } from '../helpers';
 
 const Formulario = ({ cantidad, guardarCantidad, plazo, guardarPlazo }) => {
   // Definir State
@@ -9,7 +10,7 @@ const Formulario = ({ cantidad, guardarCantidad, plazo, guardarPlazo }) => {
     e.preventDefault();
 
     // Validar
-    if (cantidad === 0 || plazo === '') {
+    if (cantidad <= 0 || plazo === 0) {
       guardarError(true);
       return;
     }
@@ -18,6 +19,7 @@ const Formulario = ({ cantidad, guardarCantidad, plazo, guardarPlazo }) => {
     guardarError(false);
 
     // Realizar la cotización
+    calcularTotal(cantidad, plazo);
   };
 
   return (
