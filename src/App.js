@@ -24,14 +24,13 @@ function App() {
 
   return (
     <Fragment>
-      <Header titulo="Cotizador de Prestamos" descripcion="Ingresa al cotizador y obten tu crédito" />
+      <Header titulo="Cotizador de Prestamos" />
       <div className="container">
         <Formulario
           cantidad={cantidad}
           guardarCantidad={guardarCantidad}
           plazo={plazo}
           guardarPlazo={guardarPlazo}
-          total={total}
           guardarTotal={guardarTotal}
           guardarCargando={guardarCargando}
         />

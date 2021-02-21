@@ -2,7 +2,7 @@ import React, { useState, Fragment } from 'react';
 import { calcularTotal } from '../helpers';
 
 const Formulario = (props) => {
-  const { cantidad, guardarCantidad, plazo, guardarPlazo, total, guardarTotal, guardarCargando } = props;
+  const { cantidad, guardarCantidad, plazo, guardarPlazo, guardarTotal, guardarCargando } = props;
   // Definir State
   const [error, guardarError] = useState(false);
 
